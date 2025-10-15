@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Faux Grid Master — v2.0 Checklist</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#b88a2d;--muted:#9aa4b2;--glass:rgba(255,255,255,0.04)}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;background:linear-gradient(180deg,#071028 0%, #0b1630 100%);color:#e6eef6}
+    .wrap{max-width:1100px;margin:28px auto;padding:20px}
+    header{display:flex;gap:16px;align-items:center}
+    h1{margin:0;font-size:20px}
+    .meta{color:var(--muted);font-size:13px}
+    .controls{margin-left:auto;display:flex;gap:8px}
+    button{background:var(--glass);border:1px solid rgba(255,255,255,0.04);padding:8px 10px;border-radius:8px;color:inherit;cursor:pointer}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.03));padding:14px;border-radius:12px;margin-top:14px;border:1px solid rgba(255,255,255,0.03)}
+    .section{margin:8px 0}
+    summary{font-weight:600;cursor:pointer;list-style:none;outline:none}
+    details{background:rgba(255,255,255,0.01);padding:10px;border-radius:8px;margin-bottom:8px}
+    ul{margin:8px 0 12px 22px;padding:0}
+    li{margin:6px 0}
+    label{cursor:pointer}
+    .note{font-size:13px;color:var(--muted);margin-bottom:8px}
+    .small{font-size:13px;color:var(--muted)}
+    .action-row{display:flex;gap:8px;align-items:center;margin-top:10px}
+    .topbar{display:flex;gap:12px;align-items:center}
+    .search{flex:1}
+    .export-area{display:flex;gap:8px;align-items:center}
+    textarea{width:100%;height:140px;background:#02040a;color:#cfe6ff;border-radius:8px;padding:8px;border:1px solid rgba(255,255,255,0.03)}
+    .muted-pill{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:999px;font-size:13px}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+    .dense{font-size:14px}
+    .kbd{background:#071022;padding:4px 6px;border-radius:6px;border:1px solid rgba(255,255,255,0.03)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Faux Grid Master — v2.0 Checklist</h1>
+        <div class="meta">Local HTML checklist • autosaves locally • collapsible sections • export/import progress</div>
+      </div>
+      <div class="controls">
+        <button id="expandAll">Expand all</button>
+        <button id="collapseAll">Collapse all</button>
+        <button id="clearProgress">Clear progress</button>
+        <button id="exportJson">Export JSON</button>
+        <button id="downloadHtml">Download HTML</button>
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="note"><strong>Version notes:</strong> This checklist follows the provided Faux Grid Master v2.0 route. It contains the same steps and notes (including unconfirmed/assumed tiles). Edit freely — progress is saved to your browser's localStorage.</div>
+
+      <!-- Sections -->
+
+      <details open class="section"><summary>Starting sequence: Power miner, Teleport ring, Unlock Gatherer</summary>
+        <ul>
+          <li><label><input type="checkbox" data-id="s-start-1"> Complete tutorial</label></li>
+          <li><label><input type="checkbox" data-id="s-start-2"> Choose Power miner</label></li>
+          <li><label><input type="checkbox" data-id="s-start-3"> Count check to stronghold, equip dramen staff, shield</label></li>
+          <li><label><input type="checkbox" data-id="s-start-4"> Stronghold all 4 floors to Fancy boots, claim Tuna Potato Ring (Teleport Ring? - UNCONFIRMED)</label></li>
+          <li><label><input type="checkbox" data-id="s-start-5"> If post-release: pick up 2-3 world hops of Cooked meat in house north before stronghold</label></li>
+          <li><label><input type="checkbox" data-id="s-start-6"> Take vine upstairs</label></li>
+          <li><label><input type="checkbox" data-id="s-start-7"> Mine 28 Tin ore for 15 mining</label></li>
+          <li><label><input type="checkbox" data-id="s-start-8"> Run to Varrock</label></li>
+          <li><label><input type="checkbox" data-id="s-start-9"> Deposit all, withdraw air runes, mind runes, Power miner axe</label></li>
+          <li><label><input type="checkbox" data-id="s-start-10"> Buy Air staff, pink skirt at clothing shop, hammer, 2 mind pack, 50 chaos runes, 2 water packs</label></li>
+          <li><label><input type="checkbox" data-id="s-start-11"> Run to Edgeville fairy ring, tele to AIS</label></li>
+          <li><label><input type="checkbox" data-id="s-start-12"> Run southwest, take boat on river to Kastori</label></li>
+          <li><label><input type="checkbox" data-id="s-start-13"> Run north, hop worlds where Gemstone crab isn't at Northern location; train mining until crab nearly dies</label></li>
+          <li><label><input type="checkbox" data-id="s-start-14"> Unlock Gatherer relic — use on Thieving, Agility, Fishing (if Dodgy Deals is a tile reward choose Thieving, Mining, Fishing)</label></li>
+        </ul>
+      </details>
+
+      <details class="section"><summary>Thieving, Golden god, Woodcutting sequence</summary>
+        <ul>
+          <li><label><input type="checkbox" data-id="s-thieve-1"> Home teleport</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-2"> Pickpocket men to 10 Thieving</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-3"> Pickpocket farmer north near Fred's house to level 15</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-4"> Pickpocket HAM members to level 40</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-5"> Run to Varrock (avoid dark wizards)</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-6"> Pickpocket guards upstairs in Varrock castle to level 50 (also reach ~42 mining/fishing)</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-7"> Minigame tele to TzHaar Fight Pits</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-8"> Mine 2x gold ore to the east</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-9"> Claim lumberjack axe at bank</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-10"> Use fight pit fairy ring, tele to DJP</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-11"> Cut trees → oaks → willows to 35 WC</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-12"> Fairy ring to AJP and run north to Civitas illa fortis</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-13"> Steal valuables in Wealthy citizen house to unlock Golden God</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-14"> Visit Varlamore Blacksmith: buy & alch mith/addy platebodies until 200k cash; keep 1 mith platelegs & 1 mith platebody</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-15"> Spend rest buying addy platebodies and alch while running to stonemason</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-16"> Alch gold leaf at Stonemason for Production Prodigy relic</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-17"> Alch Gold Leaves/Marble blocks until content with money (start marble once >750K)</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-18"> Mine Iron until banked ~100 steel bars near stonemason while alching stacks</label></li>
+          <li><label><input type="checkbox" data-id="s-thieve-19"> Run west to teak trees for 50 WC; change axe to Firemaking for mahogany later</label></li>
+          <li class="small">**Return to Stonemason (AJP fairy ring) whenever you run out of condensed gold. Need ~3.6B for fast 99 Construction later.**</li>
+        </ul>
+      </details>
+
+      <details class="section"><summary>Early combat task sequence</summary>
+        <ul>
+          <li><label><input type="checkbox" data-id="s-combat-1"> Fairy ring to DIS</label></li>
+          <li><label><input type="checkbox" data-id="s-combat-2"> Kill Lesser Demon (if bottle neck isn't an issue)</label></li>
+          <li><label><input type="checkbox" data-id="s-combat-3"> Go to Draynor bank, withdraw arrow shafts</label></li>
+          <li><label><input type="checkbox" data-id="s-combat-4"> Buy 10 wines from Fortunado</label></li>
+          <li><label><input type="checkbox" data-id="s-combat-5"> Talk to Diango to claim Banana hat</label></li>
+          <li><label><input type="checkbox" data-id="s-combat-6"> Go to Betty: buy chaos/death/elemental runes (buy 5k+ each if desired)</label></li>
+          <li><label><input type="checkbox" data-id="s-combat-7"> Run to Port Sarim fishing shop; buy bait packs and 10k+ feathers</label></li>
+          <li><label><input type="checkbox" data-id="s-combat-8"> Make headless arrows while running</label></li>
+          <li><label><input type="checkbox" data-id="s-combat-9"> Buy 50+ buckets of sand/soda ash at charter for crafting start</label></li>
+          <li><label><input type="checkbox" data-id="s-combat-10"> Charter to Corsair Cove and deposit Sand/Soda ash</label></li>
+          <li><label><input type="checkbox" data-id="s-combat-11"> Kill Ogress warrior in safespot (choosing Ranged/Strength/Prayer)</label></li>
+          <li><label><input type="checkbox" data-id="s-combat-12"> Go upstairs & cut maple tree northwest (requires Dragon Slayer autocompletion)</label></li>
+        </ul>
+      </details>
+
+      <details class="section"><summary>Crafting / Tele runes sequence</summary>
+        <ul>
+          <li><label><input type="checkbox" data-id="s-craft-1"> Minigame tele to Soul Wars</label></li>
+          <li><label><input type="checkbox" data-id="s-craft-2"> Take portal to Edgeville</label></li>
+          <li><label><input type="checkbox" data-id="s-craft-3"> Buy Rune platebody</label></li>
+          <li><label><input type="checkbox" data-id="s-craft-4"> Buy chisel from general store</label></li>
+          <li><label><input type="checkbox" data-id="s-craft-5"> Claim Harpoon in bank</label></li>
+          <li><label><input type="checkbox" data-id="s-craft-6"> Make molten glass for 8+ Crafting (9 buckets sand/soda ash)</label></li>
+          <li><label><input type="checkbox" data-id="s-craft-7"> Bank all; withdraw coins, elemental runes, slash weapon</label></li>
+          <li><label><input type="checkbox" data-id="s-craft-8"> Lever to high wild, run to Mage bank; buy 1k+ Law runes & 50 cosmic runes</label></li>
+          <li><label><input type="checkbox" data-id="s-craft-9"> Varrock tele; run to Edge fairy ring. Tele CKQ. Bank; withdraw coins, chisel</label></li>
+          <li><label><input type="checkbox" data-id="s-craft-10"> Train Crafting at gem shop: Sapphires @8, Emeralds @15; stop at 60 (buy 1 ruby for Str ammy)</label></li>
+        </ul>
+      </details>
+
+      <details class="section"><summary>Prayer → Ranged gear → Bryophyta sequence</summary>
+        <ul>
+          <li><label><input type="checkbox" data-id="s-pray-1"> Buy studded body/legs from Horvik (or green dhide if 32+ qp)</label></li>
+          <li><label><input type="checkbox" data-id="s-pray-2"> Deposit all; withdraw hammer & steel bars</label></li>
+          <li><label><input type="checkbox" data-id="s-pray-3"> Smith ~500 Steel knives</label></li>
+          <li><label><input type="checkbox" data-id="s-pray-4"> Train Prayer at altar to 60 Ranged (~67 Prayer + Combatant split)</label></li>
+          <li><label><input type="checkbox" data-id="s-pray-5"> Travel to gnome stronghold for Gnomeball task</label></li>
+          <li><label><input type="checkbox" data-id="s-pray-6"> Kill Scurrius (private instance recommended) for +1 Combat Mastery (UNCONFIRMED)</label></li>
+          <li><label><input type="checkbox" data-id="s-pray-7"> Kill Moss Giants for mossy key (choose location based on task)</label></li>
+          <li><label><input type="checkbox" data-id="s-pray-8"> Kill Bryophyta (bring an axe) for +1 Combat mastery tile and unlock 7x exp</label></li>
+        </ul>
+      </details>
+
+      <details class="section"><summary>Fishing, Tempoross, Craftsman sequence</summary>
+        <ul>
+          <li><label><input type="checkbox" data-id="s-fish-1"> Home teleport Lumbridge</label></li>
+          <li><label><input type="checkbox" data-id="s-fish-2"> If NOT Gatherer Fishing: run south & fish shrimp to 5; bait fish to 20; trout/salmon to 35</label></li>
+          <li><label><input type="checkbox" data-id="s-fish-3"> If Gatherer Fishing chosen: go Al Kharid gate → boat to Tempoross</label></li>
+          <li><label><input type="checkbox" data-id="s-fish-4"> Complete 1 Tempoross (bring Echo harpoon, 5 buckets water, hammer, rope). Use recommended solo method</label></li>
+          <li><label><input type="checkbox" data-id="s-fish-5"> Unlock Craftsman — choose Construction / Herblore / Runecraft</label></li>
+        </ul>
+      </details>
+
+      <details class="section"><summary>Strength / amulet / Gear sequence</summary>
+        <ul>
+          <li><label><input type="checkbox" data-id="s-str-1"> Fairy ring to CKQ</label></li>
+          <li><label><input type="checkbox" data-id="s-str-2"> Tele to Varrock; buy rune legs from Champs Guild</label></li>
+          <li><label><input type="checkbox" data-id="s-str-3"> Buy addy/mith full helm in Barbarian Village</label></li>
+          <li><label><input type="checkbox" data-id="s-str-4"> Tele to house; buy amulet mould from southern crafting shop</label></li>
+          <li><label><input type="checkbox" data-id="s-str-5"> Tele to Ardougne (or mini-game Tele Fishing Trawler) and buy ball of wool</label></li>
+          <li><label><input type="checkbox" data-id="s-str-6"> Withdraw Gold bar; make & enchant Ruby amulet</label></li>
+          <li><label><input type="checkbox" data-id="s-str-7"> Minigame tele to Burthorpe to get Dragon Defender (8x drop rate)</label></li>
+        </ul>
+      </details>
+
+      <details class="section"><summary>Cooking, Corrupted Shark</summary>
+        <ul>
+          <li><label><input type="checkbox" data-id="s-cook-1"> Train Cooking to 68 at Port Piscarilius food shop (bring logs, tinderbox, coins)</label></li>
+          <li><label><input type="checkbox" data-id="s-cook-2"> Buy fish (50 sardine/cod/tuna, 600+ swordfish, 1+ raw shark)</label></li>
+          <li><label><input type="checkbox" data-id="s-cook-3"> Take Piscarilius mine cart to Shayzien west; buy chef's hat</label></li>
+          <li><label><input type="checkbox" data-id="s-cook-4"> Minigame tele to Burthorpe; cook downstairs to 68 Cooking</label></li>
+          <li><label><input type="checkbox" data-id="s-cook-5"> Cook 1 shark & claim Corrupted shark</label></li>
+          <li><label><input type="checkbox" data-id="s-cook-6"> Kill Hobgoblins for 2 Limpwurt roots & make 2 Super str + 2 Super att (for Fight Caves)</label></li>
+        </ul>
+      </details>
+
+      <details class="section"><summary>Construction 1→99 (7x xp rate) — pre-requisites: enough condensed gold</summary>
+        <ul>
+          <li><label><input type="checkbox" data-id="s-con-0"> Ensure enough Condensed Gold before starting (target ~3.6B for fast 99 Con)</label></li>
+          <li><label><input type="checkbox" data-id="s-con-1"> Woodcut 121 Mahogany logs northwest of CIR fairy ring</label></li>
+          <li><label><input type="checkbox" data-id="s-con-2"> Fairy ring AIS & make mahogany planks</label></li>
+          <li><label><input type="checkbox" data-id="s-con-3"> Tele to Camelot & buy 4 watering cans</label></li>
+          <li><label><input type="checkbox" data-id="s-con-4"> Buy 4 bolts of cloth at sawmill</label></li>
+          <li><label><input type="checkbox" data-id="s-con-5"> Purchase Player Owned House; grab saw from spawn</label></li>
+          <li><label><input type="checkbox" data-id="s-con-6"> 1-37 Con: buy 127 Bagged plant 1 from Falador Garden supplier</label></li>
+          <li><label><input type="checkbox" data-id="s-con-7"> Elemental balances to 47 Runecraft (20k each elemental runes)</label></li>
+          <li><label><input type="checkbox" data-id="s-con-8"> 23 Gold sinks to 79 Con (230 Condensed gold etc) — Cost: ~2.315B</label></li>
+          <li><label><input type="checkbox" data-id="s-con-9"> Build 2x bedrooms & 2x mahog beds; hire demon butler</label></li>
+          <li><label><input type="checkbox" data-id="s-con-10"> 250 Marble walls to 95 Con (2000 Marble blocks; use butler). Cost: ~650M</label></li>
+          <li><label><input type="checkbox" data-id="s-con-11"> 41 Crystal thrones to 99 Con (615 magic stones; use butler). Cost: ~600M</label></li>
+          <li><label><input type="checkbox" data-id="s-con-12"> Finish 99 Con, 92 Herblore, 92 Runecraft; build Demonic Throne; claim Thunder khopesh</label></li>
+        </ul>
+      </details>
+
+      <details class="section"><summary>Hunter, Slayer Master sequence</summary>
+        <ul>
+          <li><label><input type="checkbox" data-id="s-hunt-1"> Use 25k Exp lamp in Hunter (boost towards 55)</label></li>
+          <li><label><input type="checkbox" data-id="s-hunt-2"> Catch grey chins in Kourend Woodland until 63</label></li>
+          <li><label><input type="checkbox" data-id="s-hunt-3"> Catch red chins in Feldip hills / Varlamore until 75</label></li>
+          <li><label><input type="checkbox" data-id="s-hunt-4"> Catch Moonlight moth to unlock unlimited Super restore or Brew (UNCONFIRMED)</label></li>
+        </ul>
+      </details>
+
+      <details class="section"><summary>Fire cape sequence</summary>
+        <ul>
+          <li><label><input type="checkbox" data-id="s-fire-1"> Train Prayer / Ranged / Strength for Fight Caves (target high Prayer & combat stats)</label></li>
+          <li><label><input type="checkbox" data-id="s-fire-2"> Complete Fight Caves with melee if 2nd mastery; bring Corrupted shark, prayer pots, super str & att</label></li>
+          <li><label><input type="checkbox" data-id="s-fire-3"> If unsure with melee: buy 10k death runes → sell for Tokkul → buy Obby rings OR use best knives</label></li>
+          <li><label><input type="checkbox" data-id="s-fire-4"> Complete 35 waves to unlock Slayer Master</label></li>
+        </ul>
+      </details>
+
+      <details class="section"><summary>Thieving training notes & high-level calculations</summary>
+        <ul>
+          <li class="dense">Thieving route: Dodgy Deals → Silver stall → Gem stall → Rogue outfit → Elves to 99</li>
+          <li class="dense">3953 pickpockets to 99 at 7x = 11.58 enhanced teles at 8x drop rate</li>
+          <li class="dense">dodgy multiplier + rogue outfit = 6x teles = 185.29 enh teles to 99 at 7x base rate (≈27,793 crystal shards)</li>
+          <li class="dense">1 enh tele seed = 205 pickpockets at 1x drop rate = 7,500 smithing/crafting xp at 1x rate</li>
+          <li class="dense">99 Craft/Smith requires 249 Enh teles at 7x rate (≈16.4m Thieving solves 99 Thieving, Crafting, Smithing)</li>
+          <li class="dense">26m Thieving solves 99 Fishing/Mining (thieving faster than mining/fishing)</li>
+        </ul>
+      </details>
+
+      <div class="action-row">
+        <div class="muted-pill">Saved locally in your browser</div>
+        <div style="flex:1"></div>
+        <button id="printBtn">Print / Save PDF</button>
+      </div>
+
+      <footer>Made from your supplied route. Edit the checklist in this page — progress autosaves. Use Export JSON to backup or Import JSON to restore.</footer>
+    </div>
+
+    <div style="margin-top:12px" class="card">
+      <div class="small">Import / Export progress (JSON)</div>
+      <textarea id="exportArea" placeholder='Click "Export JSON" to copy your saved progress here; or paste JSON and click "Import JSON"'></textarea>
+      <div style="display:flex;gap:8px;margin-top:8px">
+        <button id="importJson">Import JSON</button>
+        <button id="copyJson">Copy Export Text</button>
+      </div>
+    </div>
+
+  </div>
+
+<script>
+// Autosave & UI logic
+const STORAGE_KEY = 'faux-grid-master-v2-progress';
+const checkboxes = Array.from(document.querySelectorAll('input[type=checkbox][data-id]'));
+
+function loadProgress(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(!raw) return;
+    const obj = JSON.parse(raw);
+    checkboxes.forEach(cb=>{ cb.checked = !!obj[cb.dataset.id]; });
+  }catch(e){console.error('load error',e)}
+}
+
+function saveProgress(){
+  const obj = {};
+  checkboxes.forEach(cb=> obj[cb.dataset.id] = cb.checked);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(obj));
+}
+
+checkboxes.forEach(cb=> cb.addEventListener('change', saveProgress));
+
+// Buttons
+document.getElementById('clearProgress').addEventListener('click', ()=>{
+  if(!confirm('Clear all progress? This will uncheck everything.')) return;
+  checkboxes.forEach(cb=> cb.checked = false);
+  saveProgress();
+});
+
+document.getElementById('expandAll').addEventListener('click', ()=>{ document.querySelectorAll('details').forEach(d=> d.open = true); });
+document.getElementById('collapseAll').addEventListener('click', ()=>{ document.querySelectorAll('details').forEach(d=> d.open = false); });
+
+// Export / Import JSON
+function exportJson(){
+  const obj = {};
+  checkboxes.forEach(cb=> obj[cb.dataset.id] = cb.checked);
+  const text = JSON.stringify({version:'v2.0',time:Date.now(),progress:obj}, null, 2);
+  document.getElementById('exportArea').value = text;
+}
+
+function importJson(){
+  try{
+    const text = document.getElementById('exportArea').value.trim();
+    if(!text) return alert('Paste JSON into the textarea first.');
+    const parsed = JSON.parse(text);
+    const obj = parsed.progress || parsed;
+    checkboxes.forEach(cb=> cb.checked = !!obj[cb.dataset.id]);
+    saveProgress();
+    alert('Imported successfully.');
+  }catch(e){ alert('Import failed: ' + e.message); }
+}
+
+document.getElementById('exportJson').addEventListener('click', exportJson);
+document.getElementById('importJson').addEventListener('click', importJson);
+document.getElementById('copyJson').addEventListener('click', ()=>{
+  const t = document.getElementById('exportArea');
+  t.select(); document.execCommand('copy');
+  alert('Export text copied to clipboard');
+});
+
+// Print
+document.getElementById('printBtn').addEventListener('click', ()=>window.print());
+
+// Download HTML (self-contained)
+document.getElementById('downloadHtml').addEventListener('click', ()=>{
+  const html = '<!doctype html>\n' + document.documentElement.outerHTML;
+  const blob = new Blob([html], {type:'text/html'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'Faux-Grid-Master-v2-checklist.html';
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+});
+
+// Download current page (safe guard)
+window.addEventListener('beforeunload', saveProgress);
+loadProgress();
+
+// Populate export area on load for convenience
+exportJson();
+
+</script>
+</body>
+</html>
